@@ -4,47 +4,20 @@ AI-powered automated trading system for Solana blockchain with arbitrage detecti
 
 ## Features
 
-### AI-Powered Trading
-- OpenAI integration for market analysis and trading decisions
-- Intelligent risk assessment using machine learning
-- Market sentiment analysis
-
-### Arbitrage Bot
-- Multi-DEX support (Jupiter, Raydium, etc.)
-- Advanced arbitrage path discovery
-- Real-time market monitoring
-- Built-in risk management
-
-### Liquidation Bot
-- Solend protocol integration
-- Market volatility monitoring
-- Oracle price validation
-- Automated position management
-
-### Technical Features
-- Solana devnet support
-- Anchor framework integration
-- Real-time data collection
-- Configurable parameters via TOML
+- **AI Trading**: OpenAI integration for market analysis
+- **Arbitrage Bot**: Multi-DEX support with path discovery
+- **Liquidation Bot**: Solend protocol integration
+- **Risk Management**: Built-in risk assessment and limits
 
 ## Project Structure
 
 ```
 bot/
 ├── src/
-│   ├── arbitrage-bot/          # Arbitrage detection and execution
-│   │   ├── index.js            # Main arbitrage bot
-│   │   ├── index2_ai.js        # AI-enhanced version
-│   │   ├── api-ai-module.js    # OpenAI integration
-│   │   ├── path-finder.js      # Path discovery
-│   │   └── risk-analyzer.js    # Risk assessment
+│   ├── arbitrage-bot/          # Arbitrage detection
 │   ├── liquidation-bot/        # Liquidation monitoring
-│   │   ├── liquidation-bot.js  # Main liquidation bot
-│   │   ├── check-oracle.js     # Price validation
-│   │   └── analyze-volatility.js
-│   ├── utils/                  # Utility functions
-│   └── data/                   # Data storage
-├── models/                     # AI/ML models
+│   └── utils/                  # Utility functions
+├── models/                     # AI models
 ├── config.toml                 # Configuration
 └── package.json                # Dependencies
 ```
