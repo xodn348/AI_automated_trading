@@ -1,0 +1,32 @@
+# macOS
+.DS_Store
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+
+# Data / Models
+data/
+models/
+
+# Keys / Private files
+*.json
+private_key.txt
+wallet.json
+validator-keypair.json
+
+# Logs
+*.log
+*.tmp
+*.swp
+tf_install_log.txt
+

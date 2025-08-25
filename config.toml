@@ -1,0 +1,43 @@
+# Solana Arbitrage Bot Configuration File
+# Uses mainnet price data, but executes test transactions on devnet
+
+[routing]
+[[routing.mint_config_list]]
+# Mainnet token address for SOL
+mint = "So11111111111111111111111111111111111111112"
+# We're not using these for the basic arbitrage bot
+pump_pool_list = []
+raydium_pool_list = []
+raydium_cp_pool_list = []
+meteora_dlmm_pool_list = []
+lookup_table_accounts = []
+process_delay = 400
+
+[rpc]
+# Devnet RPC URL for test transactions
+url = "https://api.devnet.solana.com"  
+
+[spam]
+enabled = false  # Disabled for testing
+sending_rpc_urls = ["https://api.devnet.solana.com"]
+compute_unit_price = { strategy = "Random", from = 100, to = 100, count = 1 }
+max_retries = 5
+enable_simple_send = false
+
+[jito]
+enabled = false  # Disabled for testing
+
+[kamino_flashloan]
+enabled = false  # Disabled for testing
+
+[bot]
+compute_unit_limit = 200000  # For test transactions
+check_interval = 30000  # Check every 30 seconds
+merge_mints = false
+
+[wallet]
+# Wallet setup method 1: Direct private key (base58 encoded string)
+# private_key = "your_base58_encoded_private_key_here"
+
+# Wallet setup method 2: wallet.json file path (safer method)
+private_key_path = "/home/jnnj92/bot/wallet.json"
