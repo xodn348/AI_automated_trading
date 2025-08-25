@@ -4,13 +4,22 @@
 
 > ⚠️ **Important**: This bot is designed and tested for Linux environments only. It may not work properly on macOS or Windows.
 
+## What is MEV?
+
+**MEV (Maximal Extractable Value)** is a trading strategy that exploits price differences across multiple DEXes on Solana testnet. The bot executes multi-hop trades like:
+
+**SOL → Coin1 → Coin2 → Coin3 → SOL**
+
+This creates arbitrage opportunities by taking advantage of price inefficiencies between different decentralized exchanges.
+
 ## Features
 
+- **MEV Trading**: Multi-hop arbitrage (SOL → Coin1 → Coin2 → Coin3 → SOL)
 - **AI Trading**: OpenAI integration for market analysis
 - **Arbitrage Bot**: Multi-DEX support with path discovery
 - **Liquidation Bot**: Solend protocol integration
 - **Risk Management**: Built-in risk assessment and limits
-- **Devnet Testing**: Safe testing environment on Solana devnet only
+- **Testnet Only**: Safe testing environment on Solana testnet
 - **Real-time Monitoring**: Continuous price monitoring and opportunity detection
 
 ## Project Structure
@@ -139,8 +148,9 @@ Edit `config.toml` for:
 - Risk management (stop-loss, take-profit)
 
 ### Current Settings
-- **Network**: Solana devnet only (`https://api.devnet.solana.com`)
+- **Network**: Solana testnet only (`https://api.testnet.solana.com`)
 - **Trading**: Test mode (no real transactions executed)
+- **MEV Strategy**: Multi-hop arbitrage across multiple DEXes
 - **Monitoring**: 30-second intervals for arbitrage opportunities
 - **Safety**: 1% minimum profit threshold before execution
 
