@@ -24,6 +24,11 @@ private_key.txt
 wallet.json
 validator-keypair.json
 
+# Environment variables and API keys
+.env
+.env.local
+.env.*.local
+
 # Logs
 *.log
 *.tmp

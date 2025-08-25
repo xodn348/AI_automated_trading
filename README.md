@@ -102,6 +102,17 @@ OPENAI_API_KEY=your_openai_api_key
 SOLANA_RPC_URL=your_rpc_endpoint
 ```
 
+**⚠️ Important: API Key Security**
+- Create a `.env` file in the `src/arbitrage-bot/` directory
+- Never commit your `.env` file to Git (it's already in .gitignore)
+- Example `.env` file structure:
+```bash
+# src/arbitrage-bot/.env
+OPENAI_API_KEY=your_actual_openai_api_key_here
+SOLANA_PRIVATE_KEY=your_actual_solana_private_key_here
+SOLANA_RPC_URL=https://api.devnet.solana.com
+```
+
 ## 🚀 Usage
 
 ### Starting the Arbitrage Bot
